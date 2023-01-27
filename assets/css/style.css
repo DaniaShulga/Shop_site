@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after{
+  
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #cadbed;
+    height: 100px;
+}
+
+.header-container{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+img{
+    display: block;
+}
+
+.logo{
+    margin-right: 165px;
+}
+
+.nav{
+    display: flex;
+    font-weight: 300;
+    font-size: 21px;
+    color: #2c71b8;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: #2c71b8;
+    text-decoration: none;
+    margin-right: 70px;
+    border-right: 1px solid #2c71b8;
+    border-left: 1px solid #2c71b8;
+    padding: 0 30px;
+    height: 50px;
+    
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: #2c71b8;
+}
+
+.nav-link:last-child{
+    margin-right: 0;
+}
+
+/* search line */
+
+form{
+    position: relative;
+    height: 40px;
+    margin-left: 30px;
+    
+}
+
+form input, form button{
+    border: none;
+    outline: none;
+}
+
+form input{
+   
+    width: 200px;
+    height: 40px;
+    padding-left: 18px;
+    font-size: 21px;
+    border: 1px solid #2c71b8;
+    
+}
+
+form input::placeholder{
+    color: #2c71b8;
+}
+
+form button{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #2c71b8;
+}
+
+form button img{
+    margin: 0 auto;
+}
+
+.shopping-cart{
+    margin: 0 auto;
+    border: none;
+    margin-left: 25px;
+    height: 38px;
+    width: 40px;
+    background-color: white;
+}
+
+
+
+
+
