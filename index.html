@@ -14,30 +14,6 @@
 </head>
 
 <body>
-
-    <!-- <header class="header">
-        <div class="header-container">
-
-            <div class="logo">
-                <img src="/Shop(Site)/images/logo.png" alt="Лого магазину">
-            </div>
-
-            <nav class="nav">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Products</a>
-                <a href="#" class="nav-link">Payment</a>
-                <a href="#" class="nav-link">Shipping</a>
-            </nav>
-            <form>
-                <input type="text" placeholder="search">
-                <button type="submit"><img src="/Shop(Site)/images/search.png" alt="img-search"></button>
-            </form>
-
-            <button class="shopping-cart"><img src="/Shop(Site)/images/shopping cart.png" alt=""></button>
-        </div>
-    </header> -->
-
-
     <header class="header">
         <div class="container">
             <div class="row">
@@ -49,43 +25,61 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <nav>
-                         <ul class="menu">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Payment</a></li>
-                            <li><a href="">Shipping</a></li>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <a href="#" class="menu__link">Products</a>
+                                <ul class="sub-menu__list">
+                                    <li>
+                                        <div class="empty"></div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Lorem ipsum dolor</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Sit amet</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Consectetur adipisicing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Tempor incididunt</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Dolore magna aliqua</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Ut enim ad minim veniam</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sub-menu__link">Quis nostrud</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
                         </ul>
                     </nav>
-                   
+
                 </div>
                 <div class="col-3">
-                    
-                        <div class="search">
-                                <input type="text" placeholder="search" class="input-for-search">
-
-                                <button type="submit" class="button-for-search">
-                                    <img src="./images/search.png" alt="">
-                                </button>
-
-                        </div>
-
-                        <div class="cart">
-                            <button class="button-for-cart">
-                                <img src="./images/blue-cart.png" alt="">
-                            </button>
-                        </div>
-                        
-                            
-                    
-
-                    
-                    
+                    <div class="search">
+                        <input type="text" placeholder="search" class="input-for-search">
+                        <button type="submit" class="button-for-search">
+                            <img src="./images/search.png" alt="">
+                        </button>
+                    </div>
+                    <div class="cart">
+                        <button class="button-for-cart">
+                            <img src="./images/blue-cart.png" alt="">
+                        </button>
+                    </div>
                 </div>
-                
             </div>
         </div>
     </header>
+
     <main class="main">Main</main>
     <footer class="footer">Footer</footer>
 
