@@ -89,3 +89,63 @@ body{
     background-color: #2c71b8;
     color: white;
 }
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2c71b8;
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    
+
+}
+
+.input-for-search{
+    width: 158px;
+    height: 36px;
+    background: none;
+    border: none;
+}
+
+.input-for-search::placeholder{
+    color: #2c71b8;
+    padding-left: 20px;
+    
+    font-size: 21px;
+}
+
+.button-for-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background:none;
+    background-color: #2c71b8;
+    
+}
+
+.cart{
+    position: relative;
+}
+
+.button-for-cart{
+    position: absolute;
+    top: -40px;
+    left: 230px;
+    width: 40px;
+    height: 40px;
+    background:none;
+    border: none;
+    background-color: white;
+}
+
+
+
+
+
+
+
