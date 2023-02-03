@@ -339,6 +339,7 @@ body{
 
 .product{
     margin-top: 50px;
+    border: 1px solid white;
 }
 
 .product-img{
@@ -410,6 +411,30 @@ body{
     font-weight: 700;
     font-size: 21px;
     font-family: "Roboto";
+}
+
+.product-price{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    margin-top: 32px;
+}
+
+.btn{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid white;
+    background-color: #2c71b8;
+    color: #ffffff;
+    width: 208px;
+    height: 47px;
+}
+
+.btn-more-details{
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 
