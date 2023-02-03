@@ -337,6 +337,9 @@ body{
     font-family: "Roboto";
 }
 
+.product{
+    margin-top: 50px;
+}
 
 .product-img{
     display: flex;
