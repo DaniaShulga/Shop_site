@@ -136,12 +136,13 @@ body{
     display: none;
     min-width: 286px;
     position: absolute;
-    left: 143px;
+    left: 142px;
     top: 30px;
     padding: 20px 0 0 0;
     font-family: "Roboto";
     font-weight: 300;
     font-size: 21px;
+    z-index: 10;
 }
 
 .empty{
@@ -264,12 +265,9 @@ body{
     margin-left: 29px;
 }
 
-.dropdown{
-    
-}
-
 .dropdown a{
     text-decoration: none;
+    width: 252px;
 }
 
 .dropdown li {
@@ -313,13 +311,18 @@ body{
     left: 0;
     top: 20px;
     padding: 13px 0 0 0;
+    z-index: 10;
 }
 
 .sub-dropdown-list>li{
     background-color: #2c71b8;
-    border: 1px solid white;
-    padding: 0 75px 0 0;
-    
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.sub-dropdown-list>li:last-child{
+    border-bottom: 1px solid white;
 }
 
 .sub-dropdown-list a:hover{
