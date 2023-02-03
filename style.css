@@ -339,7 +339,7 @@ body{
 
 .product{
     margin-top: 50px;
-    border: 1px solid white;
+    
 }
 
 .product-img{
@@ -348,8 +348,11 @@ body{
     justify-content: center;
     position: relative;
     background-color: rgba(255, 255, 255, 0.749);
-    width: 270px;
+    width: 269px;
     height: 180px;
+}
+
+.border-for-product{
     border: 1px solid white;
 }
 
@@ -392,17 +395,23 @@ body{
     font-weight: 700;
     font-size: 30px;
     font-family: "Roboto";
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .product-desc{
     color: white;
     font-family: "Roboto";
     font-size: 21px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .product-features{
     color: white;
     font-family: "Roboto";
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
 .product-features span{
@@ -435,8 +444,16 @@ body{
 .btn-more-details{
     margin-top: 25px;
     margin-bottom: 15px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "Roboto";
 }
 
-
+.btn-add-to-cart{
+    margin-bottom: 30px;
+    font-size: 21px;
+    text-transform: uppercase;
+    font-family: "Roboto";
+}
 
 
