@@ -503,3 +503,76 @@ body {
   font-weight: 300;
   font-family: "Roboto";
 }
+
+.filter-container{
+  height: 843px;
+  width: 270px;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  background-color:rgba(255, 255, 255, 0.20);
+}
+
+.devices{
+  margin-top: 32px;
+  margin-left: 29px;
+  margin-bottom: 64px;
+}
+
+.devices:last-child{
+  margin-bottom: 0;
+}
+
+.devices span{
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 21px; 
+}
+
+.custom-checkbox{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  color: #ffffff;
+  font-family: "Roboto";
+  margin-top: 20px;
+}
+
+.custom-checkbox+label::before{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  margin-right: 12px;
+ 
+}
+
+.custom-checkbox+label:hover::before{
+  content: "";
+  background-color: white;
+}
+
+.show-more{
+  margin-top: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 21px;
+}
+
+
+.button-for-filter{
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 700;
+}
