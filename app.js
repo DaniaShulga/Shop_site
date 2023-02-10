@@ -37,3 +37,7 @@ likeEl.forEach((item) => {
     })
 })
 
+
+
+
+$(".slider-block").slick();
