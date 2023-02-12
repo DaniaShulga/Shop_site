@@ -1,8 +1,8 @@
 let productsCountEl = document.getElementById("product-count");
 let addToCartBtns = document.querySelectorAll(".btn-add-to-cart");
 
-let likeEl = document.querySelectorAll(".like");
-
+let likeBtns = document.querySelectorAll(".like-btn");
+console.log(likeBtns);
 
 addToCartBtns.forEach((elem) => {
     elem.addEventListener("click", function(){
@@ -25,18 +25,17 @@ addToCartBtns.forEach((elem) => {
 //     })
 // }
 
-likeEl.forEach((item) => {
+likeBtns.forEach((item) => {
     item.addEventListener("click", function(){
-        if(item.style.backgroundColor === "" || item.style.backgroundColor === "transparent"){
-            item.style.backgroundColor = "#2c71b8";
-            item.style.backgroundImage = "url(images/white-like.png)"
-        } else {
-            item.style.backgroundColor = "transparent";
-            item.style.backgroundImage = "url(images/blue-like.png)"
-        }
+        // if(item.classList.contains("liked")){
+        //     item.classList.remove("liked");
+        // } else {
+        //     item.classList.add("liked");
+        // }
+
+        item.classList.toggle("liked");
     })
 })
-
 
 
 
