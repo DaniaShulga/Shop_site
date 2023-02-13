@@ -269,7 +269,7 @@ body {
 .dropdown a {
   display: inline-block;
   text-decoration: none;
-  width: 251px;
+  width: 252px;
 }
 
 .dropdown li {
@@ -330,6 +330,7 @@ body {
 
 .sub-dropdown-list a:hover {
   background-color: white;
+  width: 251px;
   color: #2c71b8;
 }
 
