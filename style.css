@@ -380,6 +380,7 @@ body {
 .zoom:hover {
   background-color: #2c71b8;
   background-image: url("images/white-zoom.png");
+  cursor: pointer;
 }
 
 .like {
@@ -397,6 +398,7 @@ body {
 .like:hover, .liked{
   background-color: #2c71b8;
   background-image: url("images/white-like.png");
+  cursor: pointer;
 }
 
 .product-item {
@@ -632,7 +634,90 @@ input[type="checkbox"]:checked + label::before{
 }
 
 .slider{
-  height: 400px;
+  /* height: 400px; */
   border-bottom: 1px solid white;
   background-color: rgba(0, 0, 0, 0.20);
+}
+
+.show{
+  display: block;
+}
+
+.hide{
+  display: none;
+}
+
+.slider-block > div{
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: 200;
+  font-family: "Roboto";
+  padding: 150px 0;
+  color: white;
+
+}
+
+
+
+
+.slick-dots li:nth-child(1) button{
+  border: 2px solid white;
+
+}
+
+.slick-dots li:nth-child(2) button{
+  border: 2px solid white;
+  
+}
+
+.slick-dots li:nth-child(3) button{
+  border: 2px solid white;
+  
+}
+
+.slick-dots li:nth-child(1) button:before{
+  content: "";
+  
+
+}
+
+.slick-dots li:nth-child(2) button:before{
+  content: "";
+  
+}
+
+.slick-dots li:nth-child(3) button:before{
+  content: "";
+  
+}
+
+.slick-dots li:nth-child(1).slick-active button:before{
+  background-color: white;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(2).slick-active button:before{
+  background-color: white;
+  opacity: 1;
+}
+
+.slick-dots li:nth-child(3).slick-active button:before{
+  background-color: white;
+  opacity: 1;
+}
+
+.prev, .next{
+  position: absolute;
+  top: 175px;
+  width: 27px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 1;
+  
+}
+
+.next{
+  right: 0;
 }
