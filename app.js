@@ -81,3 +81,36 @@ $(".slider-block").slick({
 });
 
 AOS.init();
+
+let decrementBtns = document.querySelectorAll(".decrement-button")[0];
+let incrementBtns = document.querySelectorAll(".increment-button")[0];
+let productInput = document.querySelectorAll(".product-quantity input")[0];
+
+function Counter(incrementBtn,decrementBtn,inputField){
+    this.domRefs = {
+        incrementBtn,
+        decrementBtn,
+        inputField,
+    };
+    this.toggleButtonState = function(){
+        let count = this.domRefs.inputField.value;
+        this.domRefs.decrementBtn.disabled = count <= 1;
+        this.domRefs.incrementBtn.disabled = count >= 10;
+    }
+    this.toggleButtonState();
+
+    this.increment = function(){
+        this.domRefs.inputField.value = Number(this.domRefs.inputField.value) + 1;
+        this.toggleButtonState();
+    }
+    this.decrement = function(){
+        this.domRefs.inputField.value = Number(this.domRefs.inputField.value) - 1;
+        this.toggleButtonState();
+    }
+    this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
+    this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
+}
+
+const counter1 = new Counter(incrementBtns, decrementBtns,productInput);
+// console.log(counter1);
+

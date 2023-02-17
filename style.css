@@ -755,3 +755,8 @@ input[type="checkbox"]:checked + label::before{
 .next{
   right: 0;
 }
+
+.product-quantity{
+  text-align: center;
+  margin-top: 20px;
+}
