@@ -491,7 +491,7 @@ body {
   content: "";
   position: absolute;
   left: 204px;
-  top: 442px;
+  bottom: 44px;
   background-image: url("images/white-cart.png");
   background-repeat: no-repeat;
   width: 18px;

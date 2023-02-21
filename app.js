@@ -82,9 +82,13 @@ $(".slider-block").slick({
 
 AOS.init();
 
-let decrementBtns = document.querySelectorAll(".decrement-button")[0];
-let incrementBtns = document.querySelectorAll(".increment-button")[0];
-let productInput = document.querySelectorAll(".product-quantity input")[0];
+
+let decrementBtns = document.querySelectorAll(".decrement-button");
+let incrementBtns = document.querySelectorAll(".increment-button");
+let productInput = document.querySelectorAll(".product-quantity input");
+console.log(decrementBtns)
+console.log(incrementBtns)
+console.log(productInput)
 
 function Counter(incrementBtn,decrementBtn,inputField){
     this.domRefs = {
@@ -107,10 +111,17 @@ function Counter(incrementBtn,decrementBtn,inputField){
         this.domRefs.inputField.value = Number(this.domRefs.inputField.value) - 1;
         this.toggleButtonState();
     }
+    
     this.domRefs.incrementBtn.addEventListener("click", this.increment.bind(this));
+    
+    
     this.domRefs.decrementBtn.addEventListener("click", this.decrement.bind(this));
+     
 }
 
-const counter1 = new Counter(incrementBtns, decrementBtns,productInput);
-// console.log(counter1);
+const counter = [];
+
+productInput.forEach((item, idx) => {
+    counter[idx] = new Counter(incrementBtns[idx], decrementBtns[idx], item);
+})
 
