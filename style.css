@@ -137,9 +137,9 @@ body {
 
 .sub-menu__list {
   display: none;
-  min-width: 285px;
+  min-width: 286px;
   position: absolute;
-  left: 0;
+  left: -1px;
   top: 30px;
   padding: 20px 0 0 0;
   font-family: "Roboto";
